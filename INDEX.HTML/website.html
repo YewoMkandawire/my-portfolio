@@ -1,25 +1,202 @@
 <!DOCTYPE html>
 <html>
  <head> 
+  <link rel="stylesheet" type="text/css" href="styles.css">
   <style>
-    body{
-      background-color: darkslategray;
+ 
+    img {
+        border-radius: 20px;
+        float: left;
+        margin: 6px 6px 20px 20px;
     }
+    h1{
+    align-items: left ;
+    }
+    body {
+       background-image: url(""); 
+       background-color: darkslategrey;
+       background-repeat: no-repeat;
+       background-size: cover;
+      }
+    li {
+  display: inline;
+      }
+      
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: green;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+div {
+  text-align: justify;
+  text-justify: inter-word;
+}
+.footer {
+            padding: 15px;
+            text-align: left;
+            bottom: 10%;
+            margin-bottom:20px;
+            
+            
+
+        }
+
+
+       
+.active {
+  background-color: #717171;
+}
+
+.slideshow-container {
+  position: relative;
+  height: 100%;
+}
+
+.slideshow-images img {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+.prev:hover,
+.next:hover{
+  background-color: black;
+}
+ .slideshow{
+  width: 45%;
+  height: 400px;
+  margin: 20px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border-left: 5px solid orange;
+  border-radius: 10px;
+  box-shadow: 0px 1px 5px orange;
+ }
   </style>
   <title> index.html </title>
  </head>
   <body>
-   <center><b><h1> HEY THERE! I'M YEWO MKANDAWIRE</h1></center></b>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="project.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+     </ul> <br>
+   <left><b><h1>HEY THERE! I'M YEWO MKANDAWIRE</h1></left></b>
    <center><b><h1>   </h1></center></b>
     
      
-    <right><p2>MY name is Yewo Mkandawire. An ICT student here at Mzuzu University. i was born on the 8th of october in 2002 and that makes me 20 years of age, </p2></right><br>
-    <P> I have a diploma in Information communication technology which i obtained at the university of malawi in zomba. I also am able to use the following programming languages: </P><br>
-    <img src="yewo.jpg" width="420px" lenght="400px" style="float:right;margin-right: 200px;" /><br>
-     
-      <img src="java.png"/>
-      <img src="C.png"/><br>
-      <img src="js.png"/>
-      <img src="html.png"/>
+    <right><p>
+      <img src="yewo.jpg" width="150px" lenght="200px" /><div>
+      My name is Yewo Mkandawire. An ICT student at Mzuzu University. i was born on the 8th of october in 2002 and that makes me 20 years of age,I have a diploma in Information communication technology which i obtained at the university of malawi in zomba. i'm specialised in java, html, i possesses a diverse range of skills that reflect my dedication to the ever-evolving field of ICT. These skills enable me to excel in various aspects of technology, making me a versatile professional. Some of my notable skills include:
+
+      Programming Languagesc including Python, Java, C++, and JavaScript. This  allows me efficient software solutions.
+      
+      Web Development i'm experienced in front-end and back-end web development as well as frameworks such as HTML, CSS, and JavaScript. 
+      
+      Database Management: i have a solid understanding of database concepts.
+      
+      Networking: i also have a practical knowledge of networking principles and  i possess the ability to configure and troubleshoot network devices. 
+    </div></P><br><br>
+   
+     <h2><center> FEATURED PROJECTS</center></h2>
+   
+    
+    
+  
+
+     <h2><center> FORM</center></h2>
+
+    
+      <P>FOR ANY ASSISTANCE,FILL IN THE FORM BELOW</P>
+
+      <form >
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <span class="error" id="nameError"></span><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <span class="error" id="emailError"></span><br>
+
+        <label for="report problem">Report Problem In Detail:</label><br>
+        <textarea id="message" name="message" required></textarea><br>
+        <span class="error" id="messageError"></span><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <p id="demo"></p>
+     <script>
+      const time = new Date().getHours();
+      let greeting;
+      if (time < 10) {
+        greeting = "GOOD MORNING!";
+      } else if (time < 20) {
+        greeting = "GOOD DAY!";
+      } else {
+        greeting = "GOOD EVENING!";
+      }
+      document.getElementById("demo").innerHTML = greeting;
+      </script>
+
+      <h2><center> SKILLS</center></h2>
+      <P>
+       1. Programming Languages: Python, Java, C++, JavaScript, HTML, CSS, PHP<br>
+       2. Web Development: HTML5, CSS3, JavaScript, Bootstrap, jQuery, React.js, Node.js<br>
+       3. Database Management: MySQL, MongoDB, SQL Server<br>
+      </P>
+
+      <footer>yewomkandawire8@gmail.com  </footer><br>
+      <footer class="footer">
+        
+        <img src="instagram.png"><p>YEWO GUY</p>
+        
+        
+    </footer>
+    <script>
+      var slideIndex =0;
+    function showSlides(){
+      var slides = document.getElementsByClassName("slideshow-images")[0].getElementsByTagName("img");
+      for(var i = 0; i <slides.length; i++ ){
+        slides[i].style.display = "none";
+      }
+      slidesIndex++;
+      if(slideIndex>slides.length){
+       slideIndex = 1;
+      }
+      slides[slideIndex -1].style.display ="block";
+      setTimeout(showSlides,2000)
+    }  
+    function changeslide(n){
+      slideIndex += n;
+      showSlides();
+    }
+    var images =["prj3.png", "prj2.png","prj.png","prj4.png"];
+    for (var i = 0; i < images.length; i++){
+      var img =document.createElement(img);
+      img.src = images[i];
+      document.getElementsByClassName("slideshow-images")[0].appendChild(img);
+    }
+    showSlides();
+    </script>
+
  </body>
 </html>
