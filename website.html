@@ -1,30 +1,132 @@
 <!DOCTYPE html>
 <html>
  <head> 
-  
-  <title> that's so mzuni </title>
+  <style>
+ 
+    img {
+        border-radius: 20px;
+        float: left;
+        margin: 6px 6px 20px 20px;
+    }
+    h1{
+    align left: ;
+    }
+    body {
+       background-image: url(""); 
+       background-color: darkslategrey;
+       background-repeat: no-repeat;
+       background-size: cover;
+      }
+    li {
+  display: inline;
+      }
+      
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: green;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+div {
+  text-align: justify;
+  text-justify: inter-word;
+}
+.footer {
+            padding: 15px;
+            text-align: left;
+        }
+
+.footer-icon {
+            margin-right: 10px;
+        }
+  </style>
+  <title> index.html </title>
  </head>
   <body>
-   <center><b><h1> THAT'S SO MZUNI</h1></center></b>
-     <center><p> youtube series</p></center>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+     </ul> <br>
+   <left><b><h1>HEY THERE! I'M YEWO MKANDAWIRE</h1></left></b>
+   <center><b><h1>   </h1></center></b>
+    
      
-    <right><p2>That's so mzuni is a youtube channel that keeps mzuzu university entertained and updated all semester long!!. On this mzuni you tube channel you will find content such as: vlogs, skits, concert videos, interviews and many other interesting activities.</p2></right><br>
-    <P> As That's so mzuni, we are scouting for young talent here on mzuzu university campus. so if you are intetrested fill the application form below. below </P><br>
-    <img src="flyer.png" width="420px" lenght="400px" style="float:right;margin-right: 200px;" /><br>
-    <b><h2><p>FORM</p></h2></b> 
-      <form>
-       <b>NAME</b> <input type="text"><br>
-       <b><h3><p>GENDER</p></h3></b>
-       <b>MALE</b><input type="radio"name="gender"value="male"><br>
-       <b>FEMALE</b><input type="radio"name="gender"value="female"><br>
-       <h3><b>SKILL </b></h3>
-       <b>VIDEOGRAPHER</b><input type="checkbox"name="religion"value="CHRISTIANITY"><br>
-       <b>GRAPHIC DESIGHNER</b><input type="checkbox"name="religion"value="MUSLIM"><br>
-       <b>EDITOR</b><input type="checkbox"name="religion"value="MUSLIM"><br>
-       <b>PHOTOGRAPHER</b><input type="checkbox"name="religion"value="MUSLIM"><br>
-       <b>CREATIVITY DIRECTOR</b><input type="checkbox"name="religion"value="MUSLIM"><br>
-       <p>For more information,</p>
-       <a href="chase.html">click.here</a>
-      </form>
+    <right><p>
+      <img src="yewo.jpg" width="150px" lenght="200px" style=style="float:left"; /><div>
+      My name is Yewo Mkandawire. An ICT student at Mzuzu University. i was born on the 8th of october in 2002 and that makes me 20 years of age,I have a diploma in Information communication technology which i obtained at the university of malawi in zomba. i'm specialised in java, html, i possesses a diverse range of skills that reflect my dedication to the ever-evolving field of ICT. These skills enable me to excel in various aspects of technology, making me a versatile professional. Some of my notable skills include:
+
+      Programming Languagesc including Python, Java, C++, and JavaScript. This  allows me efficient software solutions.
+      
+      Web Development i'm experienced in front-end and back-end web development as well as frameworks such as HTML, CSS, and JavaScript. 
+      
+      Database Management: i have a solid understanding of database concepts.
+      
+      Networking: i also have a practical knowledge of networking principles and  i possess the ability to configure and troubleshoot network devices. 
+    </div></P><br><br>
+   
+     <h2><center> FEATURED PROJECTS</center></h2>
+     <h2><center> FORM</center></h2>
+
+     <p id="demo"></p>
+     <script>
+      const time = new Date().getHours();
+      let greeting;
+      if (time < 10) {
+        greeting = "GOOD MORNING!";
+      } else if (time < 20) {
+        greeting = "GOOD DAY!";
+      } else {
+        greeting = "GOOD EVENING!";
+      }
+      document.getElementById("demo").innerHTML = greeting;
+      </script>
+      <P>Plese fill in the form below.</P>
+
+      <form >
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <span class="error" id="nameError"></span><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <span class="error" id="emailError"></span><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" required></textarea><br>
+        <span class="error" id="messageError"></span><br>
+
+        <input type="submit" value="Submit">
+    </form>
+   
+      <h2><center> SKILLS</center></h2>
+      <P>
+       1. Programming Languages: Python, Java, C++, JavaScript, HTML, CSS, PHP<br>
+       2. Web Development: HTML5, CSS3, JavaScript, Bootstrap, jQuery, React.js, Node.js<br>
+       3. Database Management: MySQL, MongoDB, SQL Server<br>
+      </P>
+
+      <footer>yewomkandawire8@gmail.com  </footer><br>
+      <footer class="footer">
+        <span class="footer-icon">
+            <img src="instagram.psd">
+        </span>
+        YEWOO_GUY.
+    </footer>
+
  </body>
 </html>
