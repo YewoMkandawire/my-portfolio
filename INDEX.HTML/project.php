@@ -10,6 +10,7 @@
             <li><a href="indeks.html">HOME</a></li>
             <li><a href="project.html">PROJECTS</a></li>
             <li><a href="skills.html">SKILLS</a></li>
+            <li><a href="contacts.html">CONTACTS</a></li>
             
         </ul>
     </nav>
@@ -32,5 +33,9 @@
           <div class="text">Progress: 50%</div>
         </div>
       </div>
+      <p>LOCATION MAP</p>
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.9317567275475!2d33.99540073769577!3d-11.421860728474412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x191d3039d0f8ae75%3A0xf0f00e912b55adf2!2sMzuzu%20University!5e1!3m2!1sen!2smw!4v1685396809643!5m2!1sen!2smw" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 </body>
 </html>

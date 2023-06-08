@@ -1,0 +1,149 @@
+body{
+    background: linear-gradient(90deg, rgba(177, 198, 205, 0.333), rgb(73, 61, 197));
+}
+nav{
+    position: absolute;
+    top:10px;
+    left:26px;
+    z-index: 1;
+    justify-content: space-between;
+    word-spacing: 10%;
+}
+
+ul{
+    list-style: none;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 2 2 auto;
+}
+li{
+    padding:10px;
+
+}
+h1{
+    position: absolute;
+    top:10%;
+}
+.section{
+    position: relative;
+    top:20%;
+    margin: 10px;
+    display: flex;
+    height: 200px;
+   
+}
+.pic img{
+    height: 150px;
+    width: 150px;
+    border-radius: 30px;
+}
+.introduction{
+    position: relative;
+    margin: 15px;
+    
+}
+.introduction p{
+    text-align: justify;
+
+}
+.form{
+    margin:20px;
+    position: absolute;
+    top:90%;
+    bottom:5%;
+    
+    
+}
+.my_foot footer{
+    padding: 5px;
+}
+.flexicons{
+    display: flex;
+    
+    
+}
+.flexicons img{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 20%;
+    margin: 12px;
+    
+}
+.flexicons p{
+    position: relative;
+    top:20%;
+    
+}
+    
+.imagebox{
+    position: absolute;
+    margin: 30%;
+    top:0px;
+    display: flex;
+    height: 300px;
+    
+    
+    
+
+}
+#getImage{
+    position: relative;
+    height: 300px;
+    width: 400px;
+    right: 20%;
+    bottom: 40%;
+
+    
+}
+
+#imgbutton{
+    position: relative;
+    top:30%;
+    right:40%;
+    margin:12px;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    color:beige;
+    background: transparent;
+
+}
+.prjimages {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+   }
+.prjimages p{
+    font-weight: bold;
+}
+#demo{
+    position: absolute;
+    top: 6%;
+    right: 5%;
+    font-weight: bolder;
+    font-size: large;
+    margin: 25px;
+}
+.my_foot{
+    position:relative;
+    top:100%;
+    bottom: 0 4px;
+    margin: 25px;
+
+}
+
+.imagebox img{
+    width: 100px;
+    height: 100px;
+    display: block;
+
+     
+}
+
+
+
+
+
